@@ -1,0 +1,290 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Mukta', sans-serif;
+}
+
+.logo
+{
+    margin: 4px 20px;
+}
+
+.logo img
+{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+}
+
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#navbar ul
+{
+    display: flex;
+    list-style: none;
+    font-size: 1.04rem;
+}
+
+#navbar ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2px 18px;
+    margin: 1px 6px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* Home Section */
+
+#home
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+}
+
+#home::before
+{
+    content: "";
+    background : url('../images/backgroundImages/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Home Section */
+
+#home h1
+{
+    color: white;
+}
+
+#home p
+{
+    color: white;
+}
+
+/* Services Section */
+
+#services
+{
+    margin: 34px;
+    display: flex;
+}
+
+.box
+{
+    border: 2px solid red;
+    margin: 6px 6px;
+    border-radius: 23px;
+    background-color: rgb(248, 239, 239);
+}
+
+.box p
+{
+    padding: 10px 40px;
+    padding-bottom: 40px;
+}
+
+.box img
+{
+    height: 320px;
+    width: 467px;
+    margin: auto;
+    display: block;
+}
+
+/* Client Section */
+
+#clientSection
+{
+    height: 580px; 
+    position: relative;
+}
+
+#clientSection::before
+{
+    content: ""; 
+    position: absolute;   
+    background: url('../images/backgroundImages/bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.clientItem
+{
+    padding: 14px;
+}
+
+#cItem1 img
+{
+    height: 240px;
+    width: 240px;
+}
+
+#cItem2 img
+{
+    height: 300px;
+    width: 400px;
+    padding-top: 80px;
+}
+
+#cItem3 img
+{
+    height: 300px;
+    width: 220px;
+    padding-top: 80px;
+}
+
+/* Contact Section */
+
+/* #contactSection
+{
+    position: absolute; 
+    padding-bottom: 34px;
+} */
+
+.contactBox
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+
+.contactBox form
+{
+    width: 40%;
+}
+
+.contactBox label
+{
+    font-size: 1.15rem;
+    font-family: 'Labrada', serif;
+}
+
+.contactBox input,
+.contactBox textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.95rem;
+    font-family: 'Labrada', serif;
+}
+
+.contactBox::before
+{
+    content: "";
+    position: absolute;
+    background: url('../images/Contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Utility Section */
+
+.h-primary
+{
+    font-size: 2.8rem;
+    padding: 12px ;
+    font-family: 'Labrada', serif;
+}
+
+.h-secondary
+{
+    font-size: 2rem;
+    padding: 12px ;
+    font-family: 'Labrada', serif;
+}
+
+.h-tertiary
+{
+    font-size: 1.1rem;
+    font-family: 'Labrada', serif;
+}
+
+#btn
+{
+    padding: 6px 20px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+}
+
+#btn:hover
+{
+    border: 2px solid rgb(12, 88, 18);
+    background-color: rgb(250, 247, 179);
+    color: rgb(168, 43, 43);
+}
+
+.center
+{
+    text-align: center;
+}
+
+footer
+{
+    color: white;
+    background-color: black;
+    padding: 16px;
+}
